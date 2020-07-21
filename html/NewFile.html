@@ -1,0 +1,38 @@
+<html>
+<head>
+ <title> 
+      required Attribute 
+  </title> 
+    <style> 
+        h1, 
+        h2 { 
+            color: green; 
+            font-style: italic; 
+        } 
+          
+        body { 
+            text-align: center; 
+        } 
+    </style> 
+</head>
+<body>
+<p>Enter your details:</p>
+<form target="homepage.html" onsubmit="homepage.html">
+<center>
+Name:
+<input type="text" name="name" required>
+<br><br>
+Email:
+<input type="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+<br><br>
+Pasword:
+<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+<p>(Pasword should contain one capital letter one numerical one symbol)</p>
+Re EnterPassword:
+<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+<br><br>
+<input type="submit" name="submit" >
+</center>
+</form>
+</body>
+</html>
